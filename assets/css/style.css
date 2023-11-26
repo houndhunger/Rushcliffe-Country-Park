@@ -32,6 +32,20 @@ header a {
     color: inherit;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 2px solid #3a3a3a;
+}
+
 h1 {
     font-family: sans-serif;
     text-transform: uppercase;
