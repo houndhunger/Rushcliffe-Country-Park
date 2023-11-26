@@ -1,0 +1,33 @@
+/* Google font import */
+
+/* browser default styles override */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styless */
+    color: #3a3a3a;
+    font-family: sans-serif;
+}
+
+/* Header */
+header {
+    background-color: lightcoral;
+}
+
+/* Main */
+main {
+    background-color: lightblue;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+}
