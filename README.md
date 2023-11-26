@@ -1,39 +1,41 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome
 
-Welcome,
+This website was developed for my Portfolio Project 1, Code Institute Programme - Diploma in Full Stack Software Development.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Ruscliffe Country Park - Home](https://houndhunger.github.io/Rushcliffe-Country-Park/screenshots/Home.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+As a topic, I choose Ruscliffe Country Park, as an independent website, rebuilt from the Council website: https://www.rushcliffe.gov.uk/rushcliffecountrypark/
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+As an assignment, I proposed a joint interest in developing this website by Friends of Ruscliffe Country, Ruscliffe Borough Cancil and facilities businesses to attract more customers.
+There is no need to reinvent the wheel. Just functionally correct joint content from Ruscliffe Borough Council Ruscliffe Country Park with new web page design. By applying familiar web structure including standard navigation will be easy for visitors to find relevant information.
 
-`python3 -m http.server`
+# Strategy
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+# Scope
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+# Structure
 
-`http_server`
+# Development process
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Web Content
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Home
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Most important page of the website.
 
-To log into the Heroku toolbelt CLI:
+## Activities, Facilities, Friends
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The information content is taken from Ruscliffe Borough Council website and restructured where needed.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Gallery
+
+Contains my photos.
+
+## Contact
+
+Except email link, the website provides a handy form to demonstrate the Submit form function.
 
 ---
 
-Happy coding!
+Happy browsing
