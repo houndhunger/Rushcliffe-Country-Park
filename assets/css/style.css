@@ -1,6 +1,6 @@
 /* Google font import */
 
-/* browser default styles override */
+/* Browser default styles override */
 * {
     padding: 0;
     margin: 0;
@@ -25,6 +25,8 @@ header {
 /* Main */
 main {
     background-color: lightblue;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
 }
 
 /* Footer */
