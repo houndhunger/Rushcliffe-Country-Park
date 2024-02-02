@@ -20,7 +20,7 @@ body {
 /* Header */
 header {
     background-color: #ffffff;
-    padding: 0 1rem;
+    padding: 0 1rem 0 0;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -35,13 +35,31 @@ header a {
     color: inherit;
 }
 
+#logo {
+    width: 330px;
+    min-width: 330px;
+}
+
+#logo_txt {
+    font-size: 160%;
+    line-height: 30px;
+    margin: 0.6rem;
+    /*   display: block;*/
+}
+
+#logo_img {
+    float: left;
+    height: 90px;
+    margin: 0.5rem;
+}
+
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
+    font-size: 100%;
+    letter-spacing: 3px;
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -86,7 +104,7 @@ main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 120px; 
+    margin-top: 110px;
 }
 
 /* Footer */
@@ -106,42 +124,58 @@ main {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
+    header {
+        align-items: center;
+    }
+
     nav {
         display: block;
         position: relative;
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+        /*padding: 50px 1rem;*/
+    }
+
+    #logo {
+        width: 100px;
+        min-width: 100px;
+    }
+
+    #logo_txt {
+        display: none;
     }
 
     #menu {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
     .nav-toggle-label {
         display: none;
     }
-
-    #logo {
-        font-size: 200%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    main {
-        /* Push main content down to accomodate larger header */
-        margin-top: 79px;    
-    }
 }
 
 /* Media query: large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {  
-    #menu a:hover{
+@media screen and (min-width: 1030px) {
+    #menu a:hover {
         border-bottom: 2px solid #3a3a3a;
+    }
+
+    #logo {
+        width: 420px;
+        min-width: 420px;
+    }
+
+    #logo_txt {
+        font-size: 200%;
+        line-height: 43px;
+        margin: 0.6rem;
+        display: block;
     }
 }
