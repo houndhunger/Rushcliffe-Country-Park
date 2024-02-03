@@ -36,16 +36,22 @@ header a {
 }
 
 #logo {
-    width: 330px;
-    min-width: 330px;
+    width: 300px;
+    min-width: 300px;
+    height: 120px;
 }
 
 #logo_txt {
     font-size: 160%;
     line-height: 30px;
     margin: 0.6rem;
-    /*   display: block;*/
 }
+
+/*#logo_txt {
+    font-size: 190%;
+    line-height: 43px;
+    margin: 0.6rem;
+}*/
 
 #logo_img {
     float: left;
@@ -101,10 +107,16 @@ h1 {
 
 /* Main */
 main {
-    background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 110px;
+    /*padding-top: 130px;*/
+}
+
+/* Lake section */
+#lake {
+    height: 600px;
+    width: 100%;
+    background: url("../images/lake.jpg") no-repeat center center/cover;
 }
 
 /* Footer */
@@ -140,13 +152,21 @@ main {
     }
 
     #logo {
-        width: 100px;
-        min-width: 100px;
+        width: 180px;
+        min-width: 180px;
     }
 
-    #logo_txt {
-        display: none;
+    #logo_img {
+        width: 0px;
+        height: 90px;
     }
+
+    /*#logo_txt {
+        font-size: 190%;
+        line-height: 43px;
+        margin: 0.6rem;
+        display: block;
+    }*/
 
     #menu {
         display: flex;
@@ -162,20 +182,26 @@ main {
 }
 
 /* Media query: large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 2px solid #3a3a3a;
     }
 
     #logo {
-        width: 420px;
-        min-width: 420px;
+        width: 300px;
+        min-width: 30px;
     }
 
-    #logo_txt {
-        font-size: 200%;
+    #logo_img {
+        height: 90px;
+        width: auto;
+        display: initial;
+    }
+
+    /*#logo_txt {
+        font-size: 190%;
         line-height: 43px;
         margin: 0.6rem;
         display: block;
-    }
+    }*/
 }
