@@ -93,10 +93,6 @@ footer a {
     color: inherit;
 }
 
-.hidden {
-    display: none;
-}
-
 #logo {
     width: 320px;
     min-width: 320px;
@@ -159,17 +155,17 @@ nav {
 
 #main-activities {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     /*align-items: center;*/
+    margin: 30px;
 }
 
+/* Activties */
 #activities {
     /*height: 100%;*/
     /*margin: 0;*/
     /*  flex-direction: column;
     flex-wrap: nowrap;*/
-    margin: 30px;
-    width: 50%;
 }
 
 /* Lake & slogan section */
@@ -288,6 +284,11 @@ label,
     color: red;
 }
 
+/*#contact-form {
+    display: flex;
+    gap: 10px;
+}*/
+
 textarea,
 .text-input {
     /*display: block;
@@ -298,6 +299,19 @@ textarea,
     margin-bottom: 15px;
     box-sizing: border-box;
 }
+
+/*.first-name {*/
+/* width: 45%;*/
+/*min-width: 120px;
+    flex: 1;
+}*/
+
+/*.last_name {*/
+/* width: 45%;*/
+/* min-width: 120px;*/
+/*margin-left: 13px;*/
+/*flex: 1;
+}*/
 
 .submit-button {
     flex: 1;
@@ -353,6 +367,11 @@ footer h3 {
     padding: 0;
 }
 
+/* Overwrites */
+.hidden {
+    display: none;
+}
+
 /* Media query: tablets and larger (579px and up) */
 @media screen and (min-width: 576px) {
     #photos {
@@ -398,6 +417,16 @@ footer h3 {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    /* Actvities */
+    #main-activities {
+        justify-content: flex-start;
+        margin: 30px;
+    }
+
+    #activities {
+        width: 50%;
     }
 
     /* Gallery */
