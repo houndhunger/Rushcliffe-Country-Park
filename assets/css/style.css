@@ -1,4 +1,5 @@
 /* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&family=Oswald:wght@600&family=Work+Sans:wght@300&display=swap');
 
 /* Browser default styles override */
 * {
@@ -9,17 +10,36 @@
 
 /* General styles */
 body {
+    background-color: rgba(240, 253, 242, 0.7);
+    font-family: 'Work Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styless */
     color: #3a3a3a;
-    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #252525;
+}
+
+h2,
+h3 {
+    font-family: 'Hind+Guntur', sans-serif;
+}
+
+p,
+li,
+section {
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* Header */
 header {
-    background-color: rgba(240, 253, 242, 0.7);
+    background-color: rgba(240, 253, 242, 0.8);
     padding: 0 1rem 0 0;
     position: fixed;
     z-index: 99;
@@ -61,14 +81,13 @@ footer a {
     margin: 0.5rem;
 }
 
-#menu {
-    font-size: 100%;
-    letter-spacing: 3px;
-    list-style-type: none;
-}
-
 #menu>li {
+    font-family: 'Hind+Guntur', sans-serif;
+    font-size: 110%;
+    letter-spacing: 1px;
+    list-style-type: none;
     margin-bottom: 1em;
+    padding: 0 16px;
 }
 
 .active {
@@ -78,13 +97,14 @@ footer a {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #ffffff;
+    background-color: rgba(240, 253, 242, 0.8);
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
+    text-align: right;
 }
 
 /* Nav toggle */
@@ -97,14 +117,8 @@ nav {
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
-}
-
-h1 {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #252525;
+    color: #1FB25A;
+    font-size: 1.5rem;
 }
 
 /* Main */
@@ -181,8 +195,8 @@ footer li {
     }
 
     #logo {
-        width: 200px;
-        min-width: 200px;
+        width: 160px;
+        min-width: 160px;
     }
 
     #logo_img {
@@ -217,8 +231,8 @@ footer li {
     }
 
     #logo {
-        width: 320px;
-        min-width: 320px;
+        width: 280px;
+        min-width: 280px;
     }
 
     #logo_img {
