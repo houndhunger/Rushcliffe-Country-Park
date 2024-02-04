@@ -65,7 +65,7 @@
 
     <!-- Main -->
     <main>
-      <section id="signup">
+      <section id="contact">
         <form
           id="signup-form"
           method="POST"
@@ -74,12 +74,13 @@
           <h2>
             <i class="fa-solid fa-heartbeat"></i> Let's get you signed up!
           </h2>
-          <label for="first_name">First Name</label>
+          <label for="first_name">First Name</label><span>*</span>
           <input
             type="text"
             name="first_name"
             id="first_name"
             class="text-input"
+            placeholder="First"
             required
           />
           <br />
@@ -89,6 +90,7 @@
             name="last_name"
             id="last_name"
             class="text-input"
+            placeholder="Last"
             required
           />
           <br />
@@ -101,40 +103,10 @@
             required
           />
           <br />
-          <div class="radio-buttons">
-            <div>
-              <label for="road">Road</label>
-              <input
-                type="radio"
-                name="running_preference"
-                id="road"
-                value="road"
-                required
-                checked
-              />
-            </div>
-            <div>
-              <label for="trail">Trail</label>
-              <input
-                type="radio"
-                name="running_preference"
-                id="trail"
-                value="trail"
-                required
-              />
-            </div>
-            <div>
-              <label for="both">Both</label>
-              <input
-                type="radio"
-                name="running_preference"
-                id="both"
-                value="both"
-                required
-              />
-            </div>
-          </div>
-          <button type="submit" class="join-button">Let's Run!</button>
+          <label for="message">Message</label><span>*</span>
+          <textarea name="message" rows="4"></textarea>
+          <br />
+          <button type="submit" class="submit-button">Send Message</button>
         </form>
       </section>
     </main>
