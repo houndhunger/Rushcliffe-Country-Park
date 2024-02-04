@@ -10,7 +10,7 @@
 
 /* General styles */
 body {
-    background-color: rgba(240, 253, 242, 0.7);
+    background-color: #ffffff;
     font-family: 'Work Sans', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -39,15 +39,31 @@ section {
 
 /* Header */
 header {
-    background-color: rgba(240, 253, 242, 0.8);
+    background-color: hsla(129, 76%, 92%, 0.8);
     padding: 0 1rem 0 0;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
-    /*box-shadow: 0 2px 2px #3a3a3a;*/
+    /*box-shadow: 0 2px 2px rgb(175, 214, 185);*/
+    ;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+/* Main */
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    padding-top: 130px;
+}
+
+#landing-page {
+    padding-top: 0px;
+}
+
+footer {
+    background-color: hsla(129, 76%, 92%, 0.8);
 }
 
 header a,
@@ -98,7 +114,7 @@ footer li {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: rgba(240, 253, 242, 0.8);
+    /*background-color: rgba(240, 253, 242, 0.8);*/
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -122,18 +138,16 @@ nav {
     font-size: 1.5rem;
 }
 
-/* Main */
-main {
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    /*padding-top: 130px;*/
-}
-
 /* Lake & slogan section */
 #lake {
+    /* position: fixed;*/
     height: 100vh;
-    background: url("../images/lake.jpg") no-repeat center center/cover;
+    /* width: 100%;*/
+    background: url(../images/lake.jpg) no-repeat center center/cover;
     background-size: cover;
+    /* top: 0;
+    left: 0;
+    z-index: -1;*/
 }
 
 #slogan {
@@ -151,12 +165,13 @@ main {
 
 /* Gallery page */
 #gallery {
-    padding-top: 130px;
+    /*padding-top: 130px;*/
 }
 
 #photos {
     line-height: 30px;
     column-gap: 10px;
+    padding: 10px;
 }
 
 #photos img {
@@ -171,33 +186,24 @@ main {
 
 /*Gallery modal */
 
-/*#modal-wrapper {
-    position: fixed;
-    top: 130px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .modal {
     display: none;
     position: fixed;
-    top: 130px;
+    z-index: 99;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
 }
 
 .modal img {
-    max-width: 80%;
-    max-height: 80%;
-    padding: 15px;
-    background-color: #222222;
+    max-width: 95%;
+    max-height: 95%;
+    /*padding: 15px;
+    background-color: #222222;*/
 }
 
 .modal:target {

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags for search engines -->
+    <meta name="description" content="Ruscliffe Country Park in Ruddington." />
+    <meta
+      name="keywords"
+      content="Ruscliffe Country Park, Park, outdoor, Rudington, Nottinghamshire, UK, nature reserve, outdoor activities, family-friendly, walking trails, picnic spots, wildlife, birdwatching, Nottingham attractions, dog walking"
+    />
+
+    <!-- Title -->
+    <title>Ruscliffe Country Park</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="assets/favicon/Logo.png" id="logo_img" />
+          <h1 id="logo_txt">Rushcliffe Country Park</h1>
+        </a>
+      </div>
+      <input type="checkbox" name="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
+      <nav>
+        <ul id="menu">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="activities.html">Activties</a></li>
+          <li><a href="facilties.html">Facilties</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="friends.html">Friends</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section id="signup">
+        <form
+          id="signup-form"
+          method="POST"
+          action="https://formdump.codeinstitute.net"
+        >
+          <h2>
+            <i class="fa-solid fa-heartbeat"></i> Let's get you signed up!
+          </h2>
+          <label for="first_name">First Name</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            class="text-input"
+            required
+          />
+          <br />
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            class="text-input"
+            required
+          />
+          <br />
+          <label for="email_address">Email Address</label>
+          <input
+            type="email"
+            name="email_address"
+            id="email_address"
+            class="text-input"
+            required
+          />
+          <br />
+          <div class="radio-buttons">
+            <div>
+              <label for="road">Road</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="road"
+                value="road"
+                required
+                checked
+              />
+            </div>
+            <div>
+              <label for="trail">Trail</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="trail"
+                value="trail"
+                required
+              />
+            </div>
+            <div>
+              <label for="both">Both</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="both"
+                value="both"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" class="join-button">Let's Run!</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <ul id="footer-items">
+        <li>
+          <h3>LOCATION</h3>
+          Loughborough Road<br />Ruddington<br />NG11 6LS
+        </li>
+        <li>
+          <h3>FOLLOW</h3>
+          <ul id="follow">
+            <li>
+              <a
+                href="https://www.facebook.com/pages/Rushcliffe-Country-Park/124037340973926"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/search?q=Rushcliffe%20Country%20Park&src=typed_query&f=top"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit X Rushcliffe Country Park search (opens in a new tab)"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/explore/tags/rushcliffecountrypark/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit Instagram Rushcliffe Country Park hashtag (opens in a new tab)"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>CONTACT</h3>
+          <a href="mailto:enquires@ruscliffecountrypark.com"
+            >enquires@ruscliffecountrypark.com</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/bed310c06c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
