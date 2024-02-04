@@ -67,14 +67,13 @@
     <main>
       <section id="contact">
         <form
-          id="signup-form"
+          id="contact-form"
           method="POST"
-          action="https://formdump.codeinstitute.net"
+          action="https://contact.rushcliffecountrypark.com"
         >
-          <h2>
-            <i class="fa-solid fa-heartbeat"></i> Let's get you signed up!
-          </h2>
-          <label for="first_name">First Name</label><span>*</span>
+          <div class="as-label">Name</div>
+          <span>*</span>
+          <label for="first_name" class="hidden">First Name</label>
           <input
             type="text"
             name="first_name"
@@ -84,7 +83,7 @@
             required
           />
           <br />
-          <label for="last_name">Last Name</label>
+          <label for="last_name" class="hidden">Last Name</label>
           <input
             type="text"
             name="last_name"
@@ -94,7 +93,7 @@
             required
           />
           <br />
-          <label for="email_address">Email Address</label>
+          <label for="email_address">Email</label>
           <input
             type="email"
             name="email_address"
@@ -104,10 +103,18 @@
           />
           <br />
           <label for="message">Message</label><span>*</span>
-          <textarea name="message" rows="4"></textarea>
+          <textarea id="message" name="message" rows="6"></textarea>
           <br />
           <button type="submit" class="submit-button">Send Message</button>
         </form>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCWaG_SbDeUgR8TFI_PIFNZA&key=AIzaSyCY6-WREoRSkP6G-6tQGHEvuHiJBG6Zwx4"
+        ></iframe>
       </section>
     </main>
 
