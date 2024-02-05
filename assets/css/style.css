@@ -40,7 +40,8 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #252525;
-    margin: 1em 1em 0.2em 0;
+    margin: 0.3em 1em 0.2em 0;
+    font-size: 190%;
 }
 
 h2,
@@ -153,7 +154,8 @@ nav {
     font-size: 1.5rem;
 }
 
-#main-activities {
+#main-activities,
+#main-facilities {
     display: flex;
     justify-content: flex-start;
     /*align-items: center;*/
@@ -425,14 +427,16 @@ footer h3 {
         display: none;
     }
 
-    /* Actvities */
-    #main-activities {
-        justify-content: flex-start;
+    /* Actvities, Facilities */
+    #main-activities,
+    #main-facilities {
+        justify-content: space-evenly;
         margin: 30px;
     }
 
-    #activities {
-        width: 50%;
+    #activities,
+    #facilities {
+        width: 70%;
     }
 
     /* Gallery */
@@ -469,6 +473,12 @@ footer h3 {
         height: 90px;
         width: auto;
         display: initial;
+    }
+
+    /* Actvities, Facilities */
+    #activities,
+    #facilities {
+        width: 50%;
     }
 
     /* Gallery */
