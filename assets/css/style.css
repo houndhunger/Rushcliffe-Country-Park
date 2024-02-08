@@ -160,8 +160,9 @@ nav {
     display: none;
 }
 
+/* Menu burger icon style */
 .nav-toggle-label {
-    color: #1FB25A;
+    color: var(--highlight-color);
     font-size: 1.5rem;
 }
 
@@ -282,7 +283,6 @@ textarea,
 .submit-button {
     flex: 1;
     background-color: var(--highlight-color);
-    border-color: var(--highlight-color);
     color: var(--inverted-color);
     font-weight: bold;
     border: 0;
