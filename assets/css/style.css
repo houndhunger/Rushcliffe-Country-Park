@@ -291,8 +291,8 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label,
-.as-label {
+label/*,
+.as-label*/ {
     font-family: 'Hind+Guntur', sans-serif;
     display: inline;
     padding: 0;
@@ -369,6 +369,7 @@ footer h3 {
 .hidden {
     display: none;
 }
+
 
 /* Media query: tablets and larger (579px and up) */
 @media screen and (min-width: 579px) {

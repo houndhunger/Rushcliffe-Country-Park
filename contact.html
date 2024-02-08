@@ -21,6 +21,33 @@
 
   <!-- Stylesheet-->
   <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Java Script - submit Form-->
+  <script>
+    function submitForm() {
+      // Get form data
+      var formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+      };
+  
+      // Example: Log form data to console
+      console.log(formData);
+  
+      // Example: Send form data to Google Sheets using AJAX
+      // Replace 'YOUR_GOOGLE_SHEETS_ENDPOINT' with the actual endpoint
+      // More info: https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.values/append
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'YOUR_GOOGLE_SHEETS_ENDPOINT', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify(formData));
+  
+      // Example: Redirect user to a thank you page
+      // window.location.href = 'thank-you.html';
+    }
+  </script>
+
 </head>
 
 <body>
@@ -32,9 +59,9 @@
         <h1 id="logo_txt">Rushcliffe Country Park</h1>
       </a>
     </div>
-    <input type="checkbox" name="nav-toggle" id="nav-toggle">
+    <input type="checkbox" name="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
     <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="activities.html">Activties</a></li>
@@ -47,113 +74,66 @@
   </header>
 
   <!-- Main -->
-    <main>
-      <section id="contact">
-        <form
-          id="contact-form"
-          method="POST"
-          action="https://contact.rushcliffecountrypark.com"
-        >
-          <div class="as-label hidden">Name</div>
-          <label for="first_name">First Name</label><span>*</span><br />
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            class="text-input first-name"
-            required
-            autocomplete="on"
-          />
-          <label for="last_name">Last Name</label><span>*</span><br />
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            class="text-input last_name"
-            required
-            autocomplete="on"
-          />
-          <br />
-          <label for="email_address">Email</label>
-          <input
-            type="email"
-            name="email_address"
-            id="email_address"
-            class="text-input"
-            required
-            autocomplete="on"
-          />
-          <br />
-          <label for="message">Message</label><span>*</span>
-          <textarea id="message" name="message" rows="6"></textarea>
-          <br />
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-        <iframe
-          width="600"
-          height="450"
-          style="border: 0"
-          loading="lazy"
-          allowfullscreen
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCWaG_SbDeUgR8TFI_PIFNZA&key=AIzaSyCY6-WREoRSkP6G-6tQGHEvuHiJBG6Zwx4"
-        ></iframe>
-      </section>
-    </main>
+  <main>
+    <section id="contact" aria-label="Contact Form">
+      <form id="contact-form" method="post" action="mailto:daniel.pribula@gmail.com" enctype="text/plain">
+        <label for="first_name">First Name</label><span>*</span><br>
+        <input type="text" name="first_name" id="first_name" class="text-input first-name" required autocomplete="on">
+        <label for="last_name">Last Name</label><span>*</span><br>
+        <input type="text" name="last_name" id="last_name" class="text-input last_name" required autocomplete="on">
+        <br>
+        <label for="email_address">Email</label>
+        <input type="email" name="email_address" id="email_address" class="text-input" required autocomplete="on">
+        <br>
+        <label for="message">Message</label><span>*</span>
+        <textarea id="message" name="message" rows="6"></textarea>
+        <br>
+        <button type="submit" class="submit-button" aria-label="Send message">Send message</button>
+      </form>
+      <iframe width="600" height="450" style="border: 0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJCWaG_SbDeUgR8TFI_PIFNZA&key=AIzaSyCY6-WREoRSkP6G-6tQGHEvuHiJBG6Zwx4"
+        aria-label="Embedded Google Maps park location"></iframe>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <ul id="footer-items">
-        <li>
-          <h3>LOCATION</h3>
-          Loughborough&nbsp; Road<br />Ruddington<br />NG11 6LS
-        </li>
-        <li>
-          <h3>FOLLOW</h3>
-          <ul id="follow">
-            <li>
-              <a
-                href="https://www.facebook.com/pages/Rushcliffe-Country-Park/124037340973926"
-                target="_blank"
-                rel="noopener"
-                aria-label="Visit our Facebook page (opens in a new tab)"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/search?q=Rushcliffe%20Country%20Park&src=typed_query&f=top"
-                target="_blank"
-                rel="noopener"
-                aria-label="Visit X Rushcliffe Country Park search (opens in a new tab)"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/explore/tags/rushcliffecountrypark/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Visit Instagram Rushcliffe Country Park hashtag (opens in a new tab)"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3>CONTACT</h3>
-          <a href="mailto:enquires@ruscliffecountrypark.com"
-            >enquires@ruscliffecountrypark.com</a
-          >
-        </li>
-      </ul>
-    </footer>
-    <!-- Font Awesome kit -->
-    <script
-      src="https://kit.fontawesome.com/bed310c06c.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <ul id="footer-items">
+      <li>
+        <h3>LOCATION</h3>
+        Loughborough&nbsp; Road<br />Ruddington<br />NG11 6LS
+      </li>
+      <li>
+        <h3>FOLLOW</h3>
+        <ul id="follow">
+          <li>
+            <a href="https://www.facebook.com/pages/Rushcliffe-Country-Park/124037340973926" target="_blank"
+              rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/search?q=Rushcliffe%20Country%20Park&src=typed_query&f=top" target="_blank"
+              rel="noopener" aria-label="Visit X Rushcliffe Country Park search (opens in a new tab)">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/explore/tags/rushcliffecountrypark/" target="_blank" rel="noopener"
+              aria-label="Visit Instagram Rushcliffe Country Park hashtag (opens in a new tab)">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>CONTACT</h3>
+        <a href="mailto:enquires@ruscliffecountrypark.com">enquires@ruscliffecountrypark.com</a>
+      </li>
+    </ul>
+  </footer>
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/bed310c06c.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
