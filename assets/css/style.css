@@ -3,11 +3,13 @@
 
 /* root */
 :root {
-    --main-bg-color: hsla(129, 76%, 92%, 0.8);
-    --body-bg-color: #ffffff;
-    --highlight-color: #1FB25A;
-    --text-color: #333;
-    --inverted-color: #ffffff;
+    --color-main-bg: hsla(129, 76%, 92%, 0.8);
+    --color-body-bg: #ffffff;
+    --color-logo: #1FB25A; 
+    --color-highlight: #178744;
+    --color-contrast: #a41fb2;
+    --color-text: #333;
+    --color-inverted: #ffffff;
 }
 
 /* Browser default styles override */
@@ -19,19 +21,19 @@
 
 /* General styles */
 body {
-    background-color: var(--body-bg-color);
+    background-color: var(--color-body-bg);
     font-family: 'Work Sans', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
+    color: var(--color-text);
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--highlight-color);
+    color: var(--color-contrast);
     margin: 0.3em 1em 0.2em 0;
     font-size: 190%;
 }
@@ -55,10 +57,13 @@ p {
 }
 
 #logo_txt {
-    color: var(--highlight-color);
+    color: var(--color-logo);
     font-size: 160%;
     line-height: 30px;
     margin: 0.6rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #logo_img {
@@ -80,9 +85,9 @@ header {
 /* Header & Footer */
 header,
 footer {
-    background-color: var(--main-bg-color);
+    background-color: var(--color-main-bg);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: var(--text-color);
+    color: var(--color-text);
 }
 
 header a,
@@ -127,7 +132,7 @@ video {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: var(--main-bg-color);
+    background-color: var(--color-main-bg);
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -162,7 +167,7 @@ nav {
 
 /* Menu burger icon style */
 .nav-toggle-label {
-    color: var(--highlight-color);
+    color: var(--color-highlight);
     font-size: 1.5rem;
 }
 
@@ -282,8 +287,8 @@ textarea,
 
 .submit-button {
     flex: 1;
-    background-color: var(--highlight-color);
-    color: var(--inverted-color);
+    background-color: var(--color-highlight);
+    color: var(--color-inverted);
     font-weight: bold;
     border: 0;
     border-radius: 7px;
