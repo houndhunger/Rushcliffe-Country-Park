@@ -167,7 +167,7 @@ nav {
 
 /* Menu burger icon style */
 .nav-toggle-label {
-    color: var(--color-highlight);
+    color: var(--color-logo);
     font-size: 1.5rem;
 }
 
@@ -181,6 +181,7 @@ nav {
 
 #slogan {
     background-color: rgba(113, 154, 121, 0.6);
+    /*background-color: rgba(123,71,117, 0.8);*/
     font-size: 140%;
     line-height: 1.5em;
     position: absolute;
