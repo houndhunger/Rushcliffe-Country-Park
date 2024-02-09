@@ -29,6 +29,10 @@ body {
     color: var(--color-text);
 }
 
+#home-body {
+    --color-main-bg: hsla(129, 76%, 92%, 0.8);
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
