@@ -1,14 +1,14 @@
 # Ruscliffe Country Park
 ## Purpose of the project
-
-This is website provides information about Ruscliffe Country Park. Main goal is to provide united information about the park, or it can be somone who will be soon visitting the Park or participate in some event. Web visitor can find under one web information about park actvities, facilties, services, social groups and websites etc.
+This is website provides information about Ruscliffe Country Park. Main goal is to provide united information about the park. Web visitor can be somone who will be soon visitting the Park or participate in some event. Web visitor can find park related information under one web about park actvities, facilties, services, social groups and websites etc.
+This is more interesting Rebuilt for the Rushcliffe Borugh Council - [Rushlciffe Country Park website](https://www.rushcliffe.gov.uk/rushcliffecountrypark/).
 
 ![Ruscliffe Country Park - Home](https://houndhunger.github.io/Rushcliffe-Country-Park/screenshots/Home.jpg)
 
 
 /* Tone simple and informative
 
-rebuilt for the Council website: https://www.rushcliffe.gov.uk/rushcliffecountrypark/.
+
 /*
 As an assignment, I proposed a joint interest in developing this website by Friends of Ruscliffe Country, Ruscliffe Borough Cancil and facilities businesses to attract more customers.
 
@@ -31,7 +31,6 @@ Each web page show: Header, Main and Footer.
     - FOLLOW - social networ references
     - CONTACT - link to email
 
-
 Web cotains 6 web pages:
 - Home - welcoming page
 - Activities - information about activties and relevant  links
@@ -39,8 +38,6 @@ Web cotains 6 web pages:
 - Gallery - image gallery of the park areas
 - Friends - information about friends and relevant links
 - Contact - Submit form anf Google map with park location
-
-
 
 ## Development process
 First I set main structure - header, main and footer and format it for small screen devices.
@@ -50,10 +47,6 @@ Then I added footer content and format it to show correctly.
 Then I start adding individual web pages.
 On the end I updated tags  to have right accessbility info by adding aria-label atribute or proper alt atribute information.
 On the end I have tested html, css and accesibiltiy of the website.
-
-
-
-### Media
 
 ## User stories
 Each page sholud serve user diferent needs:
@@ -76,7 +69,6 @@ It's standard Submit form where user have to provide his/her First Name, Last Na
 ### Goolge map
 I't seems to me visualy pleasing to add Google map of the park location. I have registered for API key with [Google Cloud](https://console.cloud.google.com/apis/credentials) platform and restricted it for security to Google Maps only and deployment web page url.
 
-### Google fonts
 
 
 ### Gallery
@@ -97,47 +89,63 @@ Contact form in the future will send a copy of users submital.
 
 ## Content
 ### Home
-Page sholud reveil the pleasing atmosphere ogf the par by displaying full width a pohoto of park lake with bueutiful reflection.
+Page reveils pleasing atmosphere of the park by displaying full width pohoto of the park lake with beutiful reflection.
 
 ## Typography and color scheme
+- Rushcliffe logo defined coorporate colour - main colour: !['#1fb25a'](https://placehold.co/15x15/1fb25a/1fb25a.png) '#1fb25a'
+- From this a complementary colour for higlights and headings: ![#a41fb2](https://placehold.co/15x15/a41fb2/a41fb2.png) '#a41fb2'
 ## Wireframes
 ## Technology
+Used were following technologies: HTML, CSS, [ChatGPT](https://chat.openai.com/), [Fontjoy](https://fontjoy.com/), [Google fonts](https://fonts.google.com/), Excel to generate Gallery content
 ## Testing
+Website was tested in Google Chrome browser for various screen sizes.
+Color Contrast was tested with [Wave](https://wave.webaim.org/):
+- [index.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/index.html)
+- [activities.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/activities.html)
+- [facilties.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/facilties.html)
+- [gallery.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/gallery.html)
+- [friends.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/friends.html)
+- [contact.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/contact.html)
 ### Code validation
+HTML code was validated succesfuly with no Errors or Warnings:
+- [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Findex.html)
+- [activities.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Factivities.html)
+- [facilties.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Ffacilties.html)
+- [gallery.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Fgallery.html)
+- [friends.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Ffriends.html)
+- [contact.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Fcontact.html)
+
+
+
+
 ### Test cases (user story based with screenshots)
-
 ### Fixed bugs
-- Odd right padding or margin appeard on smaller screen sizes. It was caused by long email address in the footer. Solution was to break email for smaller screen sizes.
-- Logo shouldn't be H1 as there sholud be only one H1 tag on the page and H1 is used in main section. It got replaced by div. 
-### Unfixed bugs
-- Scrolling down the web page, header is pulled up that much, that header scrolls up moving menu-burger out of the top of the screen.
-
-
-
+- Scrolling down the web page, header is pulled up that much, that header scrolls up moving menu-burger out of the top of the screen. Problem was long email address in the footer. Solution for the same problem in next bug.
+- Odd right padding or margin appeard on smaller screen sizes. It was caused by long email address in the footer. Solution was to break email for smaller screen sizes using style sheet.
+- Logo shouldn't be H1 as there sholud be only one H1 tag on the page and H1 is used in main section. It was replaced by div. 
 ### Supported screens and browsers
+Website was developed and tested on Google Chrome.
 ## Deployment
-### Via code anywhere
+### Via Gitpod
+Intially web was developed in Code anywhere Workspace. Becasue of long Workspace starts, slow responces and git DB corruption on Code anywhere, development was moved to Gitpod. After Gitpod online web Workspace starts, "python3 -m http.server" is started and browser window opened with the web.
 ### Via github pages
+
+
 ## Credits
-Initial structure is based on CL Love Running Project.
+- Initally layout was based on CL Love Running Project - Header, Main, Footer.
+- Logo is [Rushcliffe Borough Council](https://www.rushcliffe.gov.uk/leisure-and-culture/rushcliffe-country-park/) Logo with added text to identify us Rudington Country Park web.
+- Navigation manu as CL Love Running Porject and modified to author's graphical likeing.
+- 
+- Footer is inspired by [Osmaston Park](https://www.osmastonpark.com/) footer.
+- Home Page contains photo image taken by author of this web page. Home page slogan is generated by ChatGPT. 
+- Video in Activities is taken and formated by author of this web page as the rest of images on the Actvities page.
+- Activities, Facilties and Friends content was copied and formated from [Rushcliffe Borough Council](https://www.rushcliffe.gov.uk/leisure-and-culture/rushcliffe-country-park/) website - text. Images have been replaced becuase of low resolution.
+- Gallery structure as CL Love Running Project (2, 3, 4 columns) and modal - photo preview added with help of ChatGPT. Pohots provicded by author of this web page.
+- Contact form based on CL Love Running Project but modified to fit the contact purpose.
+- Fonts match was found with [Fontjoy](https://fontjoy.com/) and provided by [Google fonts](https://fonts.google.com/).
+- Google Map by Google Cloud.
+- manifest.json Generated with [ChatGPT](https://chat.openai.com/). ChatGPT assited me to sovle many problems and provided me solutions how to fix bugs or pointed me right dirtection to fix the bugs.
 
-Footer is inspired by [Osmaston Park](https://www.osmastonpark.com/) footer.
-
-Home Page contains photo image taken by author of this page. Slogan is generated by ChatGPT. Video is my own 
-production.
-
-Logo is Rushcliffe Borough Council Logo with added text to identify Rudington Country Park.
-
-Navigation manu as CL Love Running Porject and modified to my graphical likeing.
-
-Activities, Facilties and Friends content was copied from Rushcliffe Borough Council website - text and images.
-
-Gallery images are my own production.
-
-Contact form based on CL Love Running Project but modified to fit the purpose.
-
-I used ChatGPT asking if particular caases is aria-label needed or not
-manifest.json Generated with ChatGPT
 
 ---
 
