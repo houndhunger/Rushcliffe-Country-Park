@@ -98,14 +98,17 @@ Page reveils pleasing atmosphere of the park by displaying full width pohoto of 
 ## Technology
 Used were following technologies: HTML, CSS, [ChatGPT](https://chat.openai.com/), [Fontjoy](https://fontjoy.com/), [Google fonts](https://fonts.google.com/), Excel to generate Gallery content
 ## Testing
-Website was tested in Google Chrome browser for various screen sizes.
-Color Contrast was tested with [Wave](https://wave.webaim.org/):
+Web site was tested in Google Chrome browser for various screen sizes.
+Web accessibilty evaluation was tested with [Wave](https://wave.webaim.org/):
 - [index.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/index.html)
 - [activities.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/activities.html)
 - [facilties.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/facilties.html)
 - [gallery.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/gallery.html)
 - [friends.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/friends.html)
 - [contact.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/contact.html)
+
+Only one Alert was outstanding for Redundant Link - Logo and Home in Navigation menu.
+
 ### Code validation
 HTML code was validated succesfuly with no Errors or Warnings:
 - [index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Findex.html)
