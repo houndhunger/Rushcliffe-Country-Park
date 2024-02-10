@@ -1,5 +1,3 @@
-/* Tone simple and informative
-
 # Ruscliffe Country Park
 ## Purpose of the project
 The [Ruscliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/) serves as a comprehensive platform offering information about Rushcliffe Country Park. The primary objective is to centralize information about the park and foster a sense of community among users interested in its offerings. Visitors to the website may include individuals planning to visit the park in the near future or those seeking information about upcoming events. The website provides a centralized hub for park-related activities, facilities, services, social groups, and other pertinent information. This project serves as a redevelopment effort for the [Rushcliffe Borugh Council - Rushlciffe Country Park website](https://www.rushcliffe.gov.uk/rushcliffecountrypark/).
@@ -181,6 +179,6 @@ git push
 - The Contact form is based on the CL Love Running Project but modified to suit the contact purpose.
 - Fonts are selected using [Fontjoy](https://fontjoy.com/) and provided by [Google fonts](https://fonts.google.com/).
 - The Google Map integration is powered by Google Cloud.
-- The manifest.json file is generated with the assistance of [ChatGPT](https://chat.openai.com/), which also helped in solving various issues and providing solutions for bug fixes.
+- The manifest.json file is generated with the assistance of [ChatGPT](https://chat.openai.com/), which also helped in solving various issues and providing solutions for bug fixes. CHatGPT helped me with restructuring english in this document.
 ---
 Happy browsing
