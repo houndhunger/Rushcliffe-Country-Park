@@ -1,6 +1,7 @@
 # Ruscliffe Country Park
 ## Purpose of the project
-The [Ruscliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/) serves as a comprehensive platform offering information about Rushcliffe Country Park. The primary objective is to centralize information about the park and foster a sense of community among users interested in its offerings. Visitors to the website may include individuals planning to visit the park in the near future or those seeking information about upcoming events. The website provides a centralized hub for park-related activities, facilities, services, social groups, and other pertinent information. This project serves as a redevelopment effort for the [Rushcliffe Borugh Council - Rushlciffe Country Park website](https://www.rushcliffe.gov.uk/rushcliffecountrypark/).
+The [Ruscliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/) is a user-friendly website providing essential information about Rushcliffe Country Park.
+The primary objective is to centralize information about the park and foster a sense of community among users interested in its offerings. The target audience for the website encompasses individuals planning to visit the park in the near future or those seeking information about upcoming events. The website provides a centralized hub for park-related activities, facilities, services, social groups, and other pertinent information. This project serves as a redevelopment effort for the [Rushcliffe Borugh Council - Rushlciffe Country Park website](https://www.rushcliffe.gov.uk/rushcliffecountrypark/).
 
 ## User stories
 Each page serves different user needs:
@@ -35,29 +36,42 @@ The website consists of six web pages:
 7. Thorough testing of the HTML, CSS, and accessibility features was conducted to ensure a seamless and user-friendly experience.
 
 ## Features
-- Navigation menu:
-It provides links to all pages of the web.
-It shows in horizontal format for wider screens. For smaller screens it re-styles to vertical format, hidden initially, then recalled by hitting standard burger favicon provided by [Fonticons - fontawesome](https://fontawesome.com).
+- Landing page image:
+A captivating, full-screen-width picture designed to immerse the user in the serene atmosphere of the park, igniting their curiosity to explore further sections of the website.
+- Navigation menu: 
+It provides links to all pages of the web. It shows in horizontal format for wider screens. For smaller screens it re-styles to vertical format, hidden initially, then recalled by hitting standard burger favicon provided by [Fonticons - fontawesome](https://fontawesome.com).
 
-### Contact Submit form
-It's standard Submit form where user have to provide his/her First Name, Last Name, Email and Message to succesfully Submit the form.
+![Navigation menu](/readmedocs/feature-images/nav-menu.png)
 
-### Goolge map
-I't seems to me visualy pleasing to add Google map of the park location. I have registered for API key with [Google Cloud](https://console.cloud.google.com/apis/credentials) platform and restricted it for security to Google Maps only and deployment website url.
+- The Footer: Displays essential information such as the park's address under "LOCATION," social network references under "FOLLOW," and a link to email under "CONTACT."
 
-### Gallery
-Continues to what Home page started, to show beutiful views of the park in different locations, time of the year and the day.
+![Navigation menu](/readmedocs/feature-images/footer.png)
+
+- Contact Submit form: It's standard Submit form where user have to provide user First Name, Last Name, Email and Message to succesfully Submit the form.
+
+![Navigation menu](/readmedocs/feature-images/form.png)
+
+- Goolge map: I't seems to me visualy pleasing to add Google map of the park location. I have registered for API key with [Google Cloud](https://console.cloud.google.com/apis/credentials) platform and restricted it for security to Google Maps only and deployment website url.
+
+![Navigation menu](/readmedocs/feature-images/map.png)
+
+- Gallery: Continues to what Home page started, to show beutiful views of the park in different locations, time of the year and the day.
 Gallery is screen size responsive and progrss to show one, two, three or four columns of images as device viewing screen width grows.
 User can click image to view enlarged version
-### Video
-Is located in Activities page at the top about Dog walking. It's well popular activity thorugh the week in the park.
-### Activities, Facilities, Friends
-Provides relevant information with links to external websites.
+
+![Navigation menu](/readmedocs/feature-images/gallery.png)
+![Navigation menu](/readmedocs/feature-images/gallery-modal.png)
+
+- Video: Is located in Activities page at the top about Dog walking. It's well popular activity thorugh the week in the park.
+
+![Navigation menu](/readmedocs/feature-images/video.png)
+
+- Sections: Activities, Facilities, Friends: Provides relevant information with links to external websites.
 The information content is taken from Ruscliffe Borough Council website and restructured where needed.
-### Contact
-Contains Submit form
+
 ## Future features
-Contact form in the future will send a informative copy of users submital.
+- Cntact form will be upgraded to send an informative copy of the user's submission.
+- The gallery modal will be upgraded to include control arrows for browsing through enlarged images directly.
 
 ## Typography and color scheme
 - Rushcliffe logo defined coorporate colour - main colour: !['#1fb25a'](https://placehold.co/15x15/1fb25a/1fb25a.png) '#1fb25a'
@@ -70,6 +84,7 @@ Contact form in the future will send a informative copy of users submital.
 - Contact:
 
 ![Draft - Balasamiq Wireframe - Contact](/readmedocs/Wireframe-Contact.png)
+
 ## Technology
 Used were following technologies: 
 - Balsamiq, Photopea - logo edit
@@ -78,6 +93,7 @@ Used were following technologies:
 - [Fontjoy](https://fontjoy.com/), [Google fonts](https://fonts.google.com/)
 - Excel to batch format Gallery content - div and img tags
 - [Fonticons - fontawesome](https://fontawesome.com)
+
 ## Testing
 Web site was tested in Google Chrome browser for various screen sizes.
 Web accessibilty evaluation was tested with [Wave](https://wave.webaim.org/):
@@ -90,7 +106,7 @@ Web accessibilty evaluation was tested with [Wave](https://wave.webaim.org/):
 
 Only one Alert was outstanding for Redundant Link - Logo and Home in Navigation menu.
 
-Analyzeing with Lighthouse in Google Chrome was done with following results:
+Analyzeing with Lighthouse in Google Chrome was done with following scores:
 
 - index.html:
 
@@ -119,6 +135,7 @@ CSS validation with no errors:
 - [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Test cases
+
 - Home:
 
 ![Test case - Home](/readmedocs/Home.png)
@@ -147,6 +164,7 @@ CSS validation with no errors:
 - Scrolling down the web page, header is pulled up that much, that header scrolls up moving menu-burger out of the top of the screen. Problem was long email address in the footer. Solution for the same problem in next bug.
 - Odd right padding or margin appeard on smaller screen sizes. It was caused by long email address in the footer. Solution was to break email for smaller screen sizes using style sheet.
 - Logo shouldn't be H1 as there sholud be only one H1 tag on the page and H1 is used in main section. It was replaced by div. 
+
 ### Supported screens and browsers
 Website was developed and tested on Google Chrome. 
 After some troubles but now it's wortking correctly for Small screen size as Galaxy Fold as for large screens.
