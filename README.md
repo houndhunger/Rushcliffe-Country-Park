@@ -65,6 +65,7 @@ It provides links to all pages of the web. It shows in horizontal format for wid
 - Gallery: Continues to what the Home page started, to show beautiful views of the park in different locations, time of the year and the day. The gallery is screen size responsive and progresses to show one, two, three or four columns of images as the device viewing screen width grows. Users can click the image to view an enlarged version
 
 ![Navigation menu](/readmedocs/feature-images/gallery.png)
+
 ![Navigation menu](/readmedocs/feature-images/gallery-modal.png)
 
 - Video: Is located on the Activities page at the top about Dog walking. It's well popular activity throughout the week in the park.
@@ -132,19 +133,24 @@ CSS validation with no errors:
 
 - Home - image cover:
     - When the user accesses the Home page, an image cover scales to 100% width or height to cover the screen. This cover image is responsive to changes in screen size to maintain its coverage. Users can scroll down to reach the footer.
+    
     ![Test case - Home](/readmedocs/testing-images/home.png)
 ---
 - Activities:
     - The user opens the Activities section by clicking on "Activities" in the Navigation menu, leading to the display of the Activities and Events section.
     - Within this section, users can play a video by clicking on it, and pause it by clicking again. Video controls are visible at the bottom of the video.
+    
     ![Test case - Activities](/readmedocs/testing-images/activities.png)
     - Users can navigate further through relevant links on the webpage.
+    
     ![Test case - Activities](/readmedocs/testing-images/activities2.png)
  ---
 - Gallery - size responsiveness and modal:
+    
     ![Test case - Gallery](/readmedocs/feature-images/gallery.png)
     - To access the Gallery, the user clicks on "Gallery" in the Navigation menu. The gallery is then displayed in a column format, with the number of columns adjusting based on the screen size.
     - Users can click on a photo in the gallery to enlarge it, displaying a modal with the enlarged photo.
+    
     ![Test case - Gallery - modal](/readmedocs/feature-images/gallery-modal.png)
     - The modal can be closed by clicking anywhere on the screen or the "X" symbol in the top right corner of the modal for an obvious action.
     - Users can then open another photo to display the modal.
@@ -152,25 +158,33 @@ CSS validation with no errors:
 - Facilities:
     - Users open the Facilities section by clicking on "Facilities" in the Navigation menu, leading to the display of the Facilities section.
     - Users can navigate further through relevant links on the webpage.
+    
     ![Test case - Facilities](/readmedocs/testing-images/facilities.png)
  ---
 - Friends:
     - Users open the Friends section by clicking on "Friends" in the Navigation menu, leading to the display of the Friends section.
     - Users can navigate further through relevant links on the webpage.
-    ![Test case - Friends](/readmedocs/testing-images/griends.png)
+    
+    ![Test case - Friends](/readmedocs/testing-images/friends.png)
  ---
 - Contact - Size Responsiveness, Form Restrictions, and Form Submission:
     - Users access the Contact section by clicking on "Contact" in the Navigation menu, leading to the display of the Contact section with a Contact form and a Google map displaying the park's location.
+    
     ![Test case - Contact](/readmedocs/testing-images/contact.png)
     - The webpage displays correctly on medium-sized screens like iPad Air.
+    
     ![Test case - Contact - iPad Air](/readmedocs/testing-images/contact-medium-screen.png)
     - The webpage also displays correctly on small screens like Galaxy Fold.
+    
     ![Test case - Contact - Galaxy Fold](/readmedocs/testing-images/contact-mobile.png)
     - Users are required to fill in their First Name and Last Name.
+    
     ![Test case - Contact - fill](/readmedocs/testing-images/contact-fill1.png)
     - Users must enter their email address correctly.
+    
     ![Test case - Contact - fill](/readmedocs/testing-images/contact-fill2.png)
     - The form was submitted successfully.
+    
     ![Test case - Contact - submiy](/readmedocs/testing-images/contact-submit.png)
 
 ### Fixed bugs
