@@ -4,13 +4,20 @@ The [Ruscliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Co
 The primary objective is to centralize information about the park and foster a sense of community among users interested in its offerings. The target audience for the website encompasses individuals planning to visit the park in the near future or those seeking information about upcoming events. The website provides a centralized hub for park-related activities, facilities, services, social groups, and other pertinent information. This project serves as a redevelopment effort for the [Rushcliffe Borugh Council - Rushlciffe Country Park website](https://www.rushcliffe.gov.uk/rushcliffecountrypark/).
 
 ## User stories
-Each page serves different user needs:
-- Home: This page serves as a welcoming introduction to the Rushcliffe Country Park.
-- Activities: Users who have heard about the park as a family-friendly destination can find detailed information about available activities and relevant links to further explore.
-- Facilities: Visitors who have previously experienced the park and are interested in hosting events, such as parties, can access information about facilities and booking options.
-- Gallery: Users who are undecided about visiting the park can browse the gallery for compelling visual content that persuades them to experience the park firsthand.
-- Friends: For those who consider the park a second home, this page provides additional information to connect with like-minded individuals.
-- Contact: Users seeking further assistance or information can utilize the contact form, while a Google map offers detailed park location information. Additional contact details are conveniently located in the footer for easy access on every page, including the park's address, social media links, and email contact information.
+For small screen devices, all user interactions begin by clicking on the burger icon to reveal the navigation menu. The following stories describe user experiences when viewing the website on larger screens with Navigation menu content directly visible.
+
+- Story No. 1: As a new user, I've heard about the park.
+    - Upon visiting the park's website, users are greeted with a full-screen image of the lake, capturing the essence of the park's atmosphere. The navigation menu at the top provides further avenues of exploration.
+- Story No. 2: As a visiting user, I'm interested in sports opportunities in the park.
+    - Users interested in sports can navigate to the Activities section, where they'll find information about various activities, including cycling tracks, trails, and events like parkrun.
+- Story No. 3: As a returning user who enjoys the park, I want to arrange a small wedding anniversary party.
+    - Users seeking venue options for events like a wedding anniversary party can click on Facilities. This section provides details about venue rentals, leading users to the Rushcliffe Venues website for booking arrangements.
+- Story No. 4: As a visiting user, I want to view photo images of the park.
+    - Intrigued by the captivating lake image on the homepage, users can navigate to the Gallery section via the navigation menu. Here, they can browse through a collection of park images and enlarge them for a closer view.
+- Story No. 5: As a returning user who feels connected to the park, I want to support it and connect with the team.
+    - Users interested in supporting the park or getting to know the team can visit the Friends section, where they can join a Facebook group or explore social media links available in the footer under the FOLLOW section.
+- Story No. 6: As a visiting user, I want to contact the park owner for business inquiries.
+    - Users can easily reach out by clicking on the Contact section, which directs them to a contact form for quick responses. Additionally, the CONTACT email is available in the footer for accessibility on larger screens.
 
 ## Structure
 The structure of the website includes three main components:
@@ -70,7 +77,7 @@ User can click image to view enlarged version
 The information content is taken from Ruscliffe Borough Council website and restructured where needed.
 
 ## Future features
-- Cntact form will be upgraded to send an informative copy of the user's submission.
+- Cotact form will be upgraded to send an informative copy of the user's submission.
 - The gallery modal will be upgraded to include control arrows for browsing through enlarged images directly.
 
 ## Typography and color scheme
@@ -173,16 +180,22 @@ FIle style.css optimizes web for these screen width changes: 365px 579px 768px a
 
 ## Deployment
 ### Via Gitpod
-Intially web was developed in Codeanywhere Workspace. Becasue of long Workspace starts, slow responces and git DB corruption on Code anywhere, development was moved to Gitpod. After Gitpod online web Workspace starts, "python3 -m http.server" is started and browser window opened with the web.
+The initial development of the website took place in the Codeanywhere Workspace. However, due to slow response times and Git database corruption issues, the development environment was transitioned to Gitpod.
+1. Upon starting the Gitpod online workspace,
+2. I initiated a Python web server using the command: "python3 -m http.server"
+3. Gitpod prompted to open the website within its environment.
+4. After making updates and saving them on Gitpod,
+5. I refreshed the website to reflect the changes.
+
 ### Via github pages
-- Website is publicly accesible on Github: [Rushcliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/)
-- And website repostory: [Rushcliffe-Country-Park](https://github.com/houndhunger/Rushcliffe-Country-Park)
+- The website is publicly accessible on GitHub:  [Rushcliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/)
+- he website repository is hosted at: [Rushcliffe-Country-Park](https://github.com/houndhunger/Rushcliffe-Country-Park)
 
-Once something is done, then it's added, commited and pushed with git commands to github repository:
-git add .
-git commit -m “Somethnig done”
-git push
-
+Upon completing any modifications:
+1. I added the changes using the command: git add .
+2. Followed by committing them with a descriptive message: git commit -m “Something done”
+3. Finally, I pushed the changes to the GitHub repository: git push
+4. Refreshing the [Rushcliffe Country Park Github](https://houndhunger.github.io/Rushcliffe-Country-Park/) webpage reflected the updates.
 
 ## Credits
 - The initial layout was inspired by the CL Love Running Project - Header, Main, Footer.
