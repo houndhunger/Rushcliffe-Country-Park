@@ -115,7 +115,12 @@ CSS validation with no errors:
 - [style.css](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhoundhunger.github.io%2FRushcliffe-Country-Park%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Test cases (user story based with screenshots)
-# IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES IMAGES
+![Home](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Home.png)
+![Activities](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Activities.png)
+![Gallery](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Gallery.png)
+![Facilties](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Facilties.png)
+![Friends](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Friends.png)
+![Contact](https://houndhunger.github.io/Rushcliffe-Country-Park/readmedocs/Contact.png)
 
 - Scrolling down the web page, header is pulled up that much, that header scrolls up moving menu-burger out of the top of the screen. Problem was long email address in the footer. Solution for the same problem in next bug.
 - Odd right padding or margin appeard on smaller screen sizes. It was caused by long email address in the footer. Solution was to break email for smaller screen sizes using style sheet.
