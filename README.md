@@ -84,13 +84,10 @@ The information content is taken from Ruscliffe Borough Council website and rest
 - Rushcliffe logo defined coorporate colour - main colour: !['#1fb25a'](https://placehold.co/15x15/1fb25a/1fb25a.png) '#1fb25a'
 - From this a complementary colour for higlights and headings: ![#a41fb2](https://placehold.co/15x15/a41fb2/a41fb2.png) '#a41fb2'
 ## Wireframes
-- Home:
 
-![Draft - Balasamiq Wireframe - Home](/readmedocs/wireframe-Home.png)
-
-- Contact:
-
-![Draft - Balasamiq Wireframe - Contact](/readmedocs/wireframe-Contact.png)
+Home | Contact
+:---: | :---:
+![Draft - Balasamiq Wireframe - Home](/readmedocs/wireframe-home.png) | ![Draft - Balasamiq Wireframe - Contact](/readmedocs/wireframe-contact.png)
 
 ## Technology
 Used were following technologies: 
@@ -115,17 +112,9 @@ Only one Alert was outstanding - Redundant Link - Logo and Home in Navigation me
 
 Analyzeing with Lighthouse in Google Chrome was done with following scores:
 
-- index.html:
-
-![Analyzeing with Lighthouse - index.html](/readmedocs/testing-images/Lighthouse-Home.png)
-
-- gallery.html:
-
-![Analyzeing with Lighthouse - galllery.html](/readmedocs/testing-images/Lighthouse-Gallery.png)
-
-- index.html - mobile device:
-
-![Analyzeing with Lighthouse - index.html for mobile device](/readmedocs/testing-images/Lighthouse-Mobile.png)
+index.html | gallery.html | index.html - mobile device
+:---: | :---: | :---:
+![Analyzeing with Lighthouse - index.html](/readmedocs/testing-images/lighthouse-home.png) | ![Analyzeing with Lighthouse - galllery.html](/readmedocs/testing-images/lighthouse-gallery.png) | ![Analyzeing with Lighthouse - index.html for mobile device](/readmedocs/testing-images/lighthouse-mobile.png)
 
 Improvements and issues (8) were caused by 3rd pary extension.
 
@@ -143,32 +132,50 @@ CSS validation with no errors:
 
 ### Test cases
 
-- Home:
-
-![Test case - Home](/readmedocs/testing-images/Home.png)
-
+- Home - image cover:
+    - When the user accesses the Home page, an image cover scales to 100% width or height to cover the screen. This cover image is responsive to changes in screen size to maintain its coverage. User can scroll down to reach the footer.
+    ![Test case - Home](/readmedocs/testing-images/home.png)
+---
 - Activities:
-
-![Test case - Activities](/readmedocs/testing-images/Activities.png)
-
-- Gallery:
-
-![Test case - Gallery](/readmedocs/testing-images/Gallery.png)
-
+    - The user opens the Activities section by clicking on "Activities" in the Navigation menu, leading to the display of the Activities and Events section.
+    - Within this section, users can play a video by clicking on it, and pause it by clicking again. Video controls are visible at the bottom of the video.
+    ![Test case - Activities](/readmedocs/testing-images/activities.png)
+    - User can navigate further through relevant links on the webpage.
+    ![Test case - Activities](/readmedocs/testing-images/activities2.png)
+ ---
+- Gallery - size responsiveness and modal:
+    ![Test case - Gallery](/readmedocs/feature-images/gallery.png)
+    - To access the Gallery, the user clicks on "Gallery" in the Navigation menu. The gallery is then displayed in a column format, with the number of columns adjusting based on the screen size.
+    - User can click on a photo in the gallery to enlarge it, displaying a modal with the enlarged photo.
+    ![Test case - Gallery - modal](/readmedocs/feature-images/gallery-modal.png)
+    - The modal can be closed by clicking anywhere on the screen or on the "X" symbol in the top right corner of the modal for an obvious action.
+    - User can then open another photo to display the modal.
+ ---
 - Facilities:
-
-![Test case - Facilities](/readmedocs/testing-images/Facilities.png)
-
+    - User open the Facilities section by clicking on "Facilities" in the Navigation menu, leading to the display of the Facilities section.
+    - User can navigate further through relevant links on the webpage.
+    ![Test case - Facilities](/readmedocs/testing-images/facilities.png)
+ ---
 - Friends:
-
-![Test case - Friends](/readmedocs/testing-images/Friends.png)
-
-- Contact:
-
-![Test case - Contact](/readmedocs/testing-images/Contact.png)
+    - User open the Friends section by clicking on "Friends" in the Navigation menu, leading to the display of the Friends section.
+    - User can navigate further through relevant links on the webpage.
+    ![Test case - Friends](/readmedocs/testing-images/griends.png)
+ ---
+- Contact - Size Responsiveness, Form Restrictions, and Form Submission:
+    - Users access the Contact section by clicking on "Contact" in the Navigation menu, leading to the display of the Contact section with a Contact form and a Google map displaying the park's location.
+    ![Test case - Contact](/readmedocs/testing-images/contact.png)
+    - The webpage displays correctly on medium-sized screens like iPad Air.
+    ![Test case - Contact - iPad Air](/readmedocs/testing-images/contact-medium-screen.png)
+    - The webpage also displays correctly on small screens like Galaxy Fold.
+    ![Test case - Contact - Galaxy Fold](/readmedocs/testing-images/contact-mobile.png)
+    - Users are required to fill in their First Name and Last Name.
+    ![Test case - Contact - fill](/readmedocs/testing-images/contact-fill1.png)
+    - Users must enter their email address correctly.
+    ![Test case - Contact - fill](/readmedocs/testing-images/contact-fill2.png)
+    - The form submits successfully.
+    ![Test case - Contact - submiy](/readmedocs/testing-images/contact-submit.png)
 
 ### Fixed bugs
-
 - When scrolling down the webpage, the header scrolled up a bit, causing the menu burger icon to move out of the screen's top. This issue was attributed to the lengthy email address in the footer.
 - An unusual right padding or margin appeared on smaller screen sizes due to the extended email address in the footer. This and above was resolved by adjusting the email layout for smaller screens using CSS.
 
@@ -182,7 +189,7 @@ FIle style.css optimizes web for these screen width changes: 365px 579px 768px a
 ### Via Gitpod
 The initial development of the website took place in the Codeanywhere Workspace. However, due to slow response times and Git database corruption issues, the development environment was transitioned to Gitpod.
 1. Upon starting the Gitpod online workspace,
-2. I initiated a Python web server using the command: "python3 -m http.server"
+2. I initiated a Python web server using the command: ```"python3 -m http.server"```
 3. Gitpod prompted to open the website within its environment.
 4. After making updates and saving them on Gitpod,
 5. I refreshed the website to reflect the changes.
@@ -192,9 +199,9 @@ The initial development of the website took place in the Codeanywhere Workspace.
 - he website repository is hosted at: [Rushcliffe-Country-Park](https://github.com/houndhunger/Rushcliffe-Country-Park)
 
 Upon completing any modifications:
-1. I added the changes using the command: git add .
-2. Followed by committing them with a descriptive message: git commit -m “Something done”
-3. Finally, I pushed the changes to the GitHub repository: git push
+1. I added the changes using the command: ```git add .```
+2. Followed by committing them with a descriptive message: ```git commit -m “Something done”```
+3. Finally, I pushed the changes to the GitHub repository: ```git push```
 4. Refreshing the [Rushcliffe Country Park Github](https://houndhunger.github.io/Rushcliffe-Country-Park/) webpage reflected the updates.
 
 ## Credits
