@@ -79,17 +79,17 @@ The information content is taken from Ruscliffe Borough Council website and rest
 ## Wireframes
 - Home:
 
-![Draft - Balasamiq Wireframe - Home](/readmedocs/Wireframe-Home.png)
+![Draft - Balasamiq Wireframe - Home](/readmedocs/wireframe-Home.png)
 
 - Contact:
 
-![Draft - Balasamiq Wireframe - Contact](/readmedocs/Wireframe-Contact.png)
+![Draft - Balasamiq Wireframe - Contact](/readmedocs/wireframe-Contact.png)
 
 ## Technology
 Used were following technologies: 
-- Balsamiq, Photopea - logo edit
+- Balsamiq V4.7.4, Photopea - logo edit
 - HTML, CSS
-- [ChatGPT](https://chat.openai.com/)
+- [ChatGPT 3.5](https://chat.openai.com/)
 - [Fontjoy](https://fontjoy.com/), [Google fonts](https://fonts.google.com/)
 - Excel to batch format Gallery content - div and img tags
 - [Fonticons - fontawesome](https://fontawesome.com)
@@ -104,23 +104,23 @@ Web accessibilty evaluation was tested with [Wave](https://wave.webaim.org/):
 - [friends.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/friends.html)
 - [contact.html](https://wave.webaim.org/report#/https://houndhunger.github.io/Rushcliffe-Country-Park/contact.html)
 
-Only one Alert was outstanding for Redundant Link - Logo and Home in Navigation menu.
+Only one Alert was outstanding - Redundant Link - Logo and Home in Navigation menu have the same link to index.html.
 
 Analyzeing with Lighthouse in Google Chrome was done with following scores:
 
 - index.html:
 
-![Analyzeing with Lighthouse - index.html](/readmedocs/Lighthouse-Home.png)
+![Analyzeing with Lighthouse - index.html](/readmedocs/testing-images/Lighthouse-Home.png)
 
 - gallery.html:
 
-![Analyzeing with Lighthouse - galllery.html](/readmedocs/Lighthouse-Gallery.png)
+![Analyzeing with Lighthouse - galllery.html](/readmedocs/testing-images/Lighthouse-Gallery.png)
 
 - index.html - mobile device:
 
-![Analyzeing with Lighthouse - index.html for mobile device](/readmedocs/Lighthouse-Mobile.png)
+![Analyzeing with Lighthouse - index.html for mobile device](/readmedocs/testing-images/Lighthouse-Mobile.png)
 
-Improvements and issues (8) was caused by some 3rd pary extension.
+Improvements and issues (8) were caused by 3rd pary extension.
 
 ### Code validation
 HTML code was validated succesfuly with no errors or warnings:
@@ -138,32 +138,32 @@ CSS validation with no errors:
 
 - Home:
 
-![Test case - Home](/readmedocs/Home.png)
+![Test case - Home](/readmedocs/testing-images/Home.png)
 
 - Activities:
 
-![Test case - Activities](/readmedocs/Activities.png)
+![Test case - Activities](/readmedocs/testing-images/Activities.png)
 
 - Gallery:
 
-![Test case - Gallery](/readmedocs/Gallery.png)
+![Test case - Gallery](/readmedocs/testing-images/Gallery.png)
 
 - Facilities:
 
-![Test case - Facilities](/readmedocs/Facilities.png)
+![Test case - Facilities](/readmedocs/testing-images/Facilities.png)
 
 - Friends:
 
-![Test case - Friends](/readmedocs/Friends.png)
+![Test case - Friends](/readmedocs/testing-images/Friends.png)
 
 - Contact:
 
-![Test case - Contact](/readmedocs/Contact.png)
+![Test case - Contact](/readmedocs/testing-images/Contact.png)
 
 ### Fixed bugs
-- Scrolling down the web page, header is pulled up that much, that header scrolls up moving menu-burger out of the top of the screen. Problem was long email address in the footer. Solution for the same problem in next bug.
-- Odd right padding or margin appeard on smaller screen sizes. It was caused by long email address in the footer. Solution was to break email for smaller screen sizes using style sheet.
-- Logo shouldn't be H1 as there sholud be only one H1 tag on the page and H1 is used in main section. It was replaced by div. 
+
+- When scrolling down the webpage, the header scrolled up a bit, causing the menu burger icon to move out of the screen's top. This issue was attributed to the lengthy email address in the footer.
+- An unusual right padding or margin appeared on smaller screen sizes due to the extended email address in the footer. This and above was resolved by adjusting the email layout for smaller screens using CSS.
 
 ### Supported screens and browsers
 Website was developed and tested on Google Chrome. 
@@ -173,7 +173,7 @@ FIle style.css optimizes web for these screen width changes: 365px 579px 768px a
 
 ## Deployment
 ### Via Gitpod
-Intially web was developed in Code anywhere Workspace. Becasue of long Workspace starts, slow responces and git DB corruption on Code anywhere, development was moved to Gitpod. After Gitpod online web Workspace starts, "python3 -m http.server" is started and browser window opened with the web.
+Intially web was developed in Codeanywhere Workspace. Becasue of long Workspace starts, slow responces and git DB corruption on Code anywhere, development was moved to Gitpod. After Gitpod online web Workspace starts, "python3 -m http.server" is started and browser window opened with the web.
 ### Via github pages
 - Website is publicly accesible on Github: [Rushcliffe Country Park website](https://houndhunger.github.io/Rushcliffe-Country-Park/)
 - And website repostory: [Rushcliffe-Country-Park](https://github.com/houndhunger/Rushcliffe-Country-Park)
